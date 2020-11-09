@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>428</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>754</width>
+     <height>428</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>754</width>
+     <height>428</height>
+    </size>
+   </property>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>220</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>31</x>
+      <y>37</y>
+      <width>576</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" rowspan="2">
+      <widget class="QPushButton" name="pushButton_H">
+       <property name="text">
+        <string>H</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="QPushButton" name="pushButton_Li">
+       <property name="text">
+        <string>Li</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="2" rowspan="2">
+      <widget class="QPushButton" name="pushButton_Be">
+       <property name="text">
+        <string>Be</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="3" rowspan="2">
+      <widget class="QPushButton" name="pushButton_B">
+       <property name="text">
+        <string>B</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="4" rowspan="2">
+      <widget class="QPushButton" name="pushButton_C">
+       <property name="text">
+        <string>C</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="7" rowspan="2">
+      <widget class="QPushButton" name="pushButton_F">
+       <property name="text">
+        <string>F</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_Mg">
+       <property name="text">
+        <string>Mg</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_Na">
+       <property name="text">
+        <string>Na</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QPushButton" name="pushButton_K">
+       <property name="text">
+        <string>K</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_Ca">
+       <property name="text">
+        <string>Ca</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton_Sc">
+       <property name="text">
+        <string>Sc</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton_Ti">
+       <property name="text">
+        <string>Ti</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QPushButton" name="pushButton_Br">
+       <property name="text">
+        <string>Br</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="QPushButton" name="pushButton_Sn">
+       <property name="text">
+        <string>Sn</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="7">
+      <widget class="QPushButton" name="pushButton_Pb">
+       <property name="text">
+        <string>Pb</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="pushButton_As">
+       <property name="text">
+        <string>As</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="5" rowspan="2">
+      <widget class="QPushButton" name="pushButton_N">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>N</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="6" rowspan="2">
+      <widget class="QPushButton" name="pushButton_O">
+       <property name="text">
+        <string>O</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_V">
+       <property name="text">
+        <string>V</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="pushButton_Cr">
+       <property name="text">
+        <string>Cr</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QPushButton" name="pushButton_Mn">
+       <property name="text">
+        <string>Mn</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QPushButton" name="pushButton_Fe">
+       <property name="text">
+        <string>Fe</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="3" column="7">
+      <widget class="QPushButton" name="pushButton_Co">
+       <property name="text">
+        <string>Co</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_Ni">
+       <property name="text">
+        <string>Ni</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_Cu">
+       <property name="text">
+        <string>Cu</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_Zn">
+       <property name="text">
+        <string>Zn</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="pushButton_Se">
+       <property name="text">
+        <string>Se</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton_Al">
+       <property name="text">
+        <string>Al</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="pushButton_Si">
+       <property name="text">
+        <string>Si</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="pushButton_P">
+       <property name="text">
+        <string>P</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QPushButton" name="pushButton_S">
+       <property name="text">
+        <string>S</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QPushButton" name="pushButton_Cl">
+       <property name="text">
+        <string>Cl</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_1</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>220</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>220</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>139</x>
+      <y>230</y>
+      <width>16</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>50</y>
+      <width>86</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_MgCl">
+       <property name="text">
+        <string>MgCl</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_2</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_H2O">
+       <property name="text">
+        <string>H2O</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_2</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_H2SO4">
+       <property name="text">
+        <string>H2SO4</string>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">buttonGroup_2</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>290</y>
+      <width>331</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Провести реакцию</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Сброс</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup_1"/>
+ </buttongroups>
+</ui>
