@@ -1,4 +1,5 @@
-import sys, sqlite3
+import sys
+import sqlite3
 
 from PyQt5 import uic 
 from PyQt5.QtSql import * 
@@ -21,22 +22,25 @@ class MyWidget(QMainWindow):
         self.textbrowser_2.SetText('')
         self.textbrowser_3.SetText('')
         elem1, elem2 = None, None
+        elements = None
 
 
     def reaction(self):
-        global elements 
-        con = sqlite3.connect('database.sqlite')
+        global elements, elem1, elem2 
+        con = sqlite3.connect('database.db')
         cur = con.cursor()
-        result = cur.execute("""
+        cur.execute("""
                         SELECT * FROM table
                         WHERE elems = elements
                         """)
+        result = cur.fetchall()
         if not result:
-            elements = elements[-1]
-            result = cur.execute("""
+            elements = elem2 + elem1
+            cur.execute("""
                         SELECT * FROM table
                         WHERE elems = elements)
                         """)
+            result = cur.fetchall()
         if not result:
             result = 'компоненты не реагируют'
         self.texbrowser.SetText(result)
@@ -53,7 +57,7 @@ class MyWidget(QMainWindow):
         else:
             elem2 = self.sender().text()
             self.textbrowser_3.setText(self.sender().text())
-            elements = elem1 + elem2
+            
         
 
 
