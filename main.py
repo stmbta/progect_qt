@@ -3,7 +3,7 @@ import sqlite3
 
 from PyQt5 import uic 
 from PyQt5.QtSql import * 
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget
 
 
 class MyWidget(QMainWindow):
@@ -15,8 +15,14 @@ class MyWidget(QMainWindow):
         self.pushButton.clicked.connect(self.reaction)
         self.pushButton_2.clicked.connect(self.cclear)
         self.pushButton_3.clicked.connect(self.coeff)
+        self.pushButton_4.clicked.connect(self.second_form_open)
         self.elem1 = None
         self.elem2 = None
+
+    
+    def second_form_open(self):
+        self.second_form = SecondForm(self, 'sjfj')
+        self.second_form.show()
 
 
     def cclear(self):
@@ -34,9 +40,9 @@ class MyWidget(QMainWindow):
                         SELECT re1, re2, re3 FROM reactions
                         WHERE elems = ?
                         """, (self.elements,)).fetchall()
-        self.textBrowser_2.setText(result[0])
-        self.textBrowser.setText(result[2])
-        self.textBrowser_3.setText(result[1])
+        self.textBrowser_2.setText(result[0][0])
+        self.textBrowser.setText(result[0][2])
+        self.textBrowser_3.setText(result[0][1])
         con.commit()
         con.close()
 
@@ -56,8 +62,11 @@ class MyWidget(QMainWindow):
                         WHERE elems = ?
                         """, (self.elements,)).fetchall()
         if not result:
-            result = tuple('компоненты не реагируют')
-        self.textBrowser.setText(result[0])
+            result = (("компоненты не реагируют"), ),
+        self.textBrowser.setText(result[0][0])
+        cur.execute("""
+                        INSERT INTO histtable(elem1,elem2,product) VALUES(?, ?, ?)
+                        """, (self.elem1, self.elem2, result[0][0]))
 
         con.commit()
         con.close()
@@ -73,7 +82,26 @@ class MyWidget(QMainWindow):
     
 def except_hook(cls, exception, traceback):
     sys.__excepthook__(cls, exception, traceback)
-            
+
+
+class SecondForm(QWidget):
+        def __init__(self, *args):
+            super().__init__()
+            uic.loadUi('firstwindow.ui', self)
+            con = sqlite3.connect('database.db')
+            cur = con.cursor()
+            result = cur.execute("""
+                        SELECT elem1, elem2, product FROM histtable
+                        WHERE product != 0
+                        """).fetchall()
+            con.commit()
+            con.close()
+            for x in range(len(result)):
+                result[x] = f'{result[x][0]} + {result[x][1]} = {result[x][2]}'
+            result = result[-1:-16:-1]
+            self.textBrowser.setText('\n'.join(result))
+            print(result)
+
         
 
 
